@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Beer Adviser</string>
+    <string name="find_beer">Find Beer!</string>
+    <string name="brands">You cannot get ye beer!</string>
+    <string name="light_checkbox_text">light</string>
+    <string name="dark_checkbox_text">dark</string>
+    <string name="amber_checkbox_text">amber</string>
+    <string name="brown_checkbox_text">brown</string>
+
+    <string-array name="beer_colors">
+        <item>light</item>
+        <item>amber</item>
+        <item>brown</item>
+        <item>dark</item>
+    </string-array>
+
+</resources>

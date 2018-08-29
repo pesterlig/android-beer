@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.provineer.peste.beeradviser.FindBeerActivity">
+
+    <TextView
+        android:id="@+id/brands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/brands"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.712" />
+
+    <!--android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"-->
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="20dp" />
+
+
+    <Button
+        android:id="@+id/find_beer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onClickFindBeer"
+        android:text="@string/find_beer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <!--Spinner enables an array of choices from one instance of the widget,
+    RadioButton forces the user into one choice among several widget buttons (which can each have
+    a different onClick method.) CheckBox allows for more than one choice - light AND dark
+    AND amber... -->
+
+    <CheckBox
+        android:id="@+id/beercolor_light_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckBoxClick"
+        android:text="@string/light_checkbox_text" />
+
+    <CheckBox
+        android:id="@+id/beercolor_dark_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckBoxClick"
+        android:text="@string/dark_checkbox_text" />
+
+    <CheckBox
+        android:id="@+id/beercolor_amber_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckBoxClick"
+        android:text="@string/amber_checkbox_text" />
+
+    <CheckBox
+        android:id="@+id/beercolor_brown_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckBoxClick"
+        android:text="@string/brown_checkbox_text" />
+
+    <!--<Spinner
+        android:id="@+id/color"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintVertical_bias="0.189"
+        android:entries="@array/beer_colors"/> -->
+
+</android.support.constraint.ConstraintLayout>
